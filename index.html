@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Calculator</title>
+		<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Oxygen+Mono"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/jpg" href="https://p1.hiclipart.com/preview/584/61/267/clay-os-6-a-macos-icon-calculator-black-remote-control-icon-png-clipart.jpg" />
+	</head>
+	<body>
+		
+		<div class="main">
+
+			<div id="calculator">
+				<div id="result">0</div>
+				<button onclick="cls();">AC</button>
+				<button onclick="num(this.innerHTML);">7</button>
+				<button onclick="num(this.innerHTML);">8</button>
+				<button onclick="num(this.innerHTML);">9</button>
+				<button onclick="calc(this.innerHTML);">÷</button>
+				<button onclick="num(this.innerHTML);">4</button>
+				<button onclick="num(this.innerHTML);">5</button>
+				<button onclick="num(this.innerHTML);">6</button>
+				<button onclick="calc(this.innerHTML);">x</button>
+				<button onclick="num(this.innerHTML);">1</button>
+				<button onclick="num(this.innerHTML);">2</button>
+				<button onclick="num(this.innerHTML);">3</button>
+				<button onclick="calc(this.innerHTML);">-</button>
+				<button onclick="num(this.innerHTML);">0</button>
+				<button onclick="num(this.innerHTML);">.</button>
+				<button onclick="total();">=</button>
+				<button onclick="calc(this.innerHTML);">+</button>
+				<div id="smallResult"></div>
+			</div>
+
+		</div>
+
+
+		<script src="script.js"></script>
+	</body>
+</html>

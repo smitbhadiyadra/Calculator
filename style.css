@@ -1,0 +1,129 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body {
+	background: #ccc;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.main{
+	width: 100vw;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: url(3.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+
+#calculator {
+	position: absolute;
+	border-radius: 7px;
+	margin: auto;
+	margin-top: 20px;
+	display: block;
+	height: auto;
+	width: auto;
+	background-color: #000000;
+	font-size: 0.8em;
+	padding: 5px;
+	max-width: 320px;
+}
+#calculator:before,
+#calculator:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	-moz-border-radius: 100px / 10px;
+	border-radius: 100px / 10px;
+}
+#calculator:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform: skew(8deg) rotate(3deg);
+	-moz-transform: skew(8deg) rotate(3deg);
+	-ms-transform: skew(8deg) rotate(3deg);
+	-o-transform: skew(8deg) rotate(3deg);
+	transform: skew(8deg) rotate(3deg);
+}
+
+#smallResult {
+	position: absolute;
+	top: 3px;
+	right: 10px;
+}
+
+#result {
+	width: 100%;
+	padding: 15px 15px;
+	text-align: right;
+	font-size: 2.5em;
+	font-family: 'Oxygen Mono', monospace;
+	background: inherit;
+	color: #F8F9F9;
+}
+
+button {
+	width: 65px;
+	height: 65px;
+	margin: 10px 5px;
+	outline: none;
+	border: none;
+	background: #333333;
+	color: #EAEBEB;
+	border-radius: 50px;
+	font-size: 1.8em;
+}
+
+button:active {
+	background: #A3A4A6;
+}
+
+button:nth-child(2) {
+	margin-left: 240px;
+	display: block;
+	background: #A3A4A6;
+	color: #000000;
+}
+
+button:nth-child(2):active {
+	background: #EAEBEB;
+}
+
+button:nth-child(6),
+button:nth-child(10),
+button:nth-child(14),
+button:nth-child(17),
+button:nth-child(18) {
+	background: #FE9E05;
+	color: white;
+}
+
+button:nth-child(6):active,
+button:nth-child(10):active,
+button:nth-child(14):active,
+button:nth-child(17):active,
+button:nth-child(18):active {
+	background: #333333;
+}
+
+
